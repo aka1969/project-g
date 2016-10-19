@@ -1,25 +1,138 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zhg-7F-n1g">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Zodiac signs-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CollectionViewMy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zx3-sJ-XcO">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="GCK-od-xEx">
+                                    <size key="itemSize" width="90" height="90"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="30" minY="30" maxX="30" maxY="30"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Lyu-9b-Vpy" customClass="CollectionViewCell" customModule="CollectionViewMy" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="30" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CzT-q2-hFI">
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.14842897653579712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="CzT-q2-hFI" firstAttribute="top" secondItem="Lyu-9b-Vpy" secondAttribute="top" id="S4K-HX-Pgv"/>
+                                            <constraint firstItem="CzT-q2-hFI" firstAttribute="trailing" secondItem="Lyu-9b-Vpy" secondAttribute="trailing" id="nhH-c9-Bvt"/>
+                                            <constraint firstItem="CzT-q2-hFI" firstAttribute="leading" secondItem="Lyu-9b-Vpy" secondAttribute="leading" id="ns7-mO-GFv"/>
+                                            <constraint firstAttribute="bottom" secondItem="CzT-q2-hFI" secondAttribute="bottom" id="v0m-SC-Ted"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="Imageview" destination="CzT-q2-hFI" id="7U2-Xe-Fei"/>
+                                            <segue destination="AOG-Ld-rgw" kind="show" id="zHL-zh-Ymw"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="AiX-39-N7g"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fzo-vL-vow"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.03265569731593132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zx3-sJ-XcO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Emg-iZ-5gb"/>
+                            <constraint firstItem="zx3-sJ-XcO" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="brR-Vu-SPj"/>
+                            <constraint firstItem="zx3-sJ-XcO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="m8l-vh-uMc"/>
+                            <constraint firstAttribute="trailing" secondItem="zx3-sJ-XcO" secondAttribute="trailing" id="pbC-Mm-aBa"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Zodiac signs" id="6Lg-zn-9fT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1380" y="134"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="hCz-56-ZW6">
+            <objects>
+                <viewController id="AOG-Ld-rgw" customClass="DetailViewController" customModule="CollectionViewMy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YOJ-6z-RD0"/>
+                        <viewControllerLayoutGuide type="bottom" id="h28-Oq-edf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xeI-8d-lPT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YVR-KP-4LZ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="CwS-zX-eg9"/>
+                                    <constraint firstAttribute="height" constant="90" id="gob-uf-quG"/>
+                                </constraints>
+                            </imageView>
+                            <textView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEB-Ah-8db">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.03265569731593132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.03265569731593132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qEB-Ah-8db" firstAttribute="leading" secondItem="YVR-KP-4LZ" secondAttribute="leading" id="2Jg-T3-pEB"/>
+                            <constraint firstItem="YVR-KP-4LZ" firstAttribute="top" secondItem="YOJ-6z-RD0" secondAttribute="bottom" constant="20" id="4bN-Ya-GVX"/>
+                            <constraint firstItem="qEB-Ah-8db" firstAttribute="trailing" secondItem="xeI-8d-lPT" secondAttribute="trailingMargin" id="4oZ-jT-4Lt"/>
+                            <constraint firstItem="qEB-Ah-8db" firstAttribute="top" secondItem="YVR-KP-4LZ" secondAttribute="bottom" constant="27" id="6DP-1n-Dcd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YVR-KP-4LZ" secondAttribute="leading" id="EbV-bx-jCD"/>
+                            <constraint firstAttribute="bottom" secondItem="qEB-Ah-8db" secondAttribute="bottom" constant="20" symbolic="YES" id="Rcz-Bl-B2c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DetailImage" destination="YVR-KP-4LZ" id="aCd-Z5-58Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WLS-e6-9Jm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2069.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OL2-dZ-7Fj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zhg-7F-n1g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7cv-Qj-1Ks">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="A1x-ys-fso"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uhe-KW-gWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="655" y="134"/>
         </scene>
     </scenes>
 </document>
