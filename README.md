@@ -1,2 +1,2 @@
 # project-g
-# goroscope
+# new horoscope application
