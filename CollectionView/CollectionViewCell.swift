@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CollectionViewCell: UICollectionViewCell {
     

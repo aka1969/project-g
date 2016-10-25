@@ -12,8 +12,6 @@
 		126BE14C1B6A4F1B0043BB44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126BE14A1B6A4F1B0043BB44 /* Main.storyboard */; };
 		126BE14E1B6A4F1B0043BB44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126BE14D1B6A4F1B0043BB44 /* Assets.xcassets */; };
 		126BE1511B6A4F1B0043BB44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126BE14F1B6A4F1B0043BB44 /* LaunchScreen.storyboard */; };
-		126BE15C1B6A4F1B0043BB44 /* CollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BE15B1B6A4F1B0043BB44 /* CollectionViewTests.swift */; };
-		126BE1671B6A4F1B0043BB44 /* CollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BE1661B6A4F1B0043BB44 /* CollectionViewUITests.swift */; };
 		126BE1811B6A69EB0043BB44 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BE1801B6A69EB0043BB44 /* CollectionViewCell.swift */; };
 		126BE1831B6A6E5A0043BB44 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BE1821B6A6E5A0043BB44 /* DetailViewController.swift */; };
 		DE1516C71D9981790088C734 /* 1capricorn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE1516BB1D9981790088C734 /* 1capricorn.jpg */; };
@@ -29,6 +27,8 @@
 		DE1516D11D9981790088C734 /* 11scorpio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE1516C51D9981790088C734 /* 11scorpio.jpg */; };
 		DE1516D21D9981790088C734 /* 12sagittarius.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE1516C61D9981790088C734 /* 12sagittarius.jpg */; };
 		DE4E5CF51D99E948007834AF /* nightsky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE4E5CF41D99E948007834AF /* nightsky.jpg */; };
+		DE5566591DBD809100858CD0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5566581DBD809100858CD0 /* SignUpViewController.swift */; };
+		DE55665B1DBDBAE700858CD0 /* Cat.png in Resources */ = {isa = PBXBuildFile; fileRef = DE55665A1DBDBAE700858CD0 /* Cat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +57,7 @@
 		126BE1501B6A4F1B0043BB44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		126BE1521B6A4F1B0043BB44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		126BE1571B6A4F1B0043BB44 /* CollectionViewMyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewMyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		126BE15B1B6A4F1B0043BB44 /* CollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTests.swift; sourceTree = "<group>"; };
-		126BE15D1B6A4F1B0043BB44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		126BE1621B6A4F1B0043BB44 /* CollectionViewMyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewMyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		126BE1661B6A4F1B0043BB44 /* CollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewUITests.swift; sourceTree = "<group>"; };
-		126BE1681B6A4F1B0043BB44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		126BE1801B6A69EB0043BB44 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		126BE1821B6A6E5A0043BB44 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DE1516BB1D9981790088C734 /* 1capricorn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1capricorn.jpg; sourceTree = "<group>"; };
@@ -77,6 +73,8 @@
 		DE1516C51D9981790088C734 /* 11scorpio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11scorpio.jpg; sourceTree = "<group>"; };
 		DE1516C61D9981790088C734 /* 12sagittarius.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12sagittarius.jpg; sourceTree = "<group>"; };
 		DE4E5CF41D99E948007834AF /* nightsky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nightsky.jpg; path = CollectionView/nightsky.jpg; sourceTree = "<group>"; };
+		DE5566581DBD809100858CD0 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DE55665A1DBDBAE700858CD0 /* Cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +107,6 @@
 			children = (
 				DE4E5CF41D99E948007834AF /* nightsky.jpg */,
 				126BE1451B6A4F1B0043BB44 /* CollectionView */,
-				126BE15A1B6A4F1B0043BB44 /* CollectionViewTests */,
-				126BE1651B6A4F1B0043BB44 /* CollectionViewUITests */,
 				126BE1441B6A4F1B0043BB44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,29 +141,13 @@
 				DE1516C41D9981790088C734 /* 10libra.jpg */,
 				DE1516C51D9981790088C734 /* 11scorpio.jpg */,
 				DE1516C61D9981790088C734 /* 12sagittarius.jpg */,
+				DE55665A1DBDBAE700858CD0 /* Cat.png */,
 				126BE14D1B6A4F1B0043BB44 /* Assets.xcassets */,
 				126BE14F1B6A4F1B0043BB44 /* LaunchScreen.storyboard */,
 				126BE1521B6A4F1B0043BB44 /* Info.plist */,
+				DE5566581DBD809100858CD0 /* SignUpViewController.swift */,
 			);
 			path = CollectionView;
-			sourceTree = "<group>";
-		};
-		126BE15A1B6A4F1B0043BB44 /* CollectionViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				126BE15B1B6A4F1B0043BB44 /* CollectionViewTests.swift */,
-				126BE15D1B6A4F1B0043BB44 /* Info.plist */,
-			);
-			path = CollectionViewTests;
-			sourceTree = "<group>";
-		};
-		126BE1651B6A4F1B0043BB44 /* CollectionViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				126BE1661B6A4F1B0043BB44 /* CollectionViewUITests.swift */,
-				126BE1681B6A4F1B0043BB44 /* Info.plist */,
-			);
-			path = CollectionViewUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,13 +222,14 @@
 					};
 					126BE1561B6A4F1B0043BB44 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 686F8833J4;
 						LastSwiftMigration = 0800;
-						TestTargetID = 126BE1421B6A4F1B0043BB44;
 					};
 					126BE1611B6A4F1B0043BB44 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 686F8833J4;
 						LastSwiftMigration = 0800;
-						TestTargetID = 126BE1421B6A4F1B0043BB44;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -279,6 +260,7 @@
 			files = (
 				DE1516CB1D9981790088C734 /* 5taurus.jpg in Resources */,
 				126BE1511B6A4F1B0043BB44 /* LaunchScreen.storyboard in Resources */,
+				DE55665B1DBDBAE700858CD0 /* Cat.png in Resources */,
 				DE1516C71D9981790088C734 /* 1capricorn.jpg in Resources */,
 				DE1516CF1D9981790088C734 /* 9virgo.jpg in Resources */,
 				DE1516CA1D9981790088C734 /* 4aries.jpg in Resources */,
@@ -321,6 +303,7 @@
 				126BE1471B6A4F1B0043BB44 /* AppDelegate.swift in Sources */,
 				126BE1811B6A69EB0043BB44 /* CollectionViewCell.swift in Sources */,
 				126BE1831B6A6E5A0043BB44 /* DetailViewController.swift in Sources */,
+				DE5566591DBD809100858CD0 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				126BE15C1B6A4F1B0043BB44 /* CollectionViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +318,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				126BE1671B6A4F1B0043BB44 /* CollectionViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,38 +475,40 @@
 		126BE16F1B6A4F1B0043BB44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 686F8833J4;
 				INFOPLIST_FILE = CollectionViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemon.CollectionViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollectionViewMy.app/CollectionViewMy";
 			};
 			name = Debug;
 		};
 		126BE1701B6A4F1B0043BB44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 686F8833J4;
 				INFOPLIST_FILE = CollectionViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemon.CollectionViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollectionViewMy.app/CollectionViewMy";
 			};
 			name = Release;
 		};
 		126BE1721B6A4F1B0043BB44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 686F8833J4;
 				INFOPLIST_FILE = CollectionViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemon.CollectionViewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = CollectionView;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -533,12 +516,14 @@
 		126BE1731B6A4F1B0043BB44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 686F8833J4;
 				INFOPLIST_FILE = CollectionViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemon.CollectionViewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = CollectionView;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
