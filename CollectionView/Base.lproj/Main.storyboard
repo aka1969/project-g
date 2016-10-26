@@ -68,7 +68,7 @@
         <!--Sign Up-->
         <scene sceneID="7AO-cW-MN8">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" id="Emj-ST-aQ8" customClass="SignUpViewController" customModule="CollectionViewMy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Emj-ST-aQ8" customClass="SignUpViewController" customModule="CollectionViewMy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L8n-IT-5mY"/>
                         <viewControllerLayoutGuide type="bottom" id="gFe-jI-T4k"/>
@@ -140,6 +140,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveButt:" destination="Emj-ST-aQ8" eventType="touchUpInside" id="vyx-Hv-hBJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
